@@ -2,6 +2,8 @@
 
 QuickWARC is an Electron-based application designed for creating, viewing, and managing WARC files easily. With QuickWARC, you can import existing WARC files for viewing, create new WARC files by assembling multiple captures into collections, and crawl websites to generate WARC files from the content.
 
+
+
 ## Features
 
 - **Import WARC Files:** Easily view the contents of existing WARC files.
@@ -49,3 +51,10 @@ QuickWARC is distributed under the Apache License 2.0, which allows for both per
 ## Support
 
 For support, please direct any questions or issues to the GitHub issues page for this project. This will be the primary channel for support and discussions regarding bugs, feature requests, and contributions.
+
+## Screenshots
+
+![Screen Shot 1](website/assets/shot1.png)
+![Screen Shot 2](website/assets/shot2.png)
+![Screen Shot 3](website/assets/shot3.png)
+![Screen Shot 4](website/assets/shot4.png)
