@@ -1,0 +1,51 @@
+{
+  "name": "QuickWARC",
+  "version": "1.0.0",
+  "description": "A simple website caputre application",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "rollup -c & electron .",
+    "debug": "set debug=1& rollup -c & electron . ",
+    "importmaps": "npx @jsenv/importmap-node-module src/index.html",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -w"
+  },
+  "author": "Paul Brunt",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@babel/preset-env": "^7.24.3",
+    "@jsenv/importmap-node-module": "^7.0.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-jsx-pragmatic": "^1.0.2",
+    "electron": "^29.1.5",
+    "electron-builder": "^24.13.3",
+    "rollup": "^2.79.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-sourcemaps": "^0.6.3"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans": "^5.0.21",
+    "@preact/signals": "^1.2.3",
+    "@seald-io/nedb": "^4.0.4",
+    "electron-context-menu": "^3.6.1",
+    "htm": "^3.1.1",
+    "node-fetch": "^3.3.2",
+    "preact": "^10.20.1",
+    "tmp": "^0.2.3"
+  },
+  "build": {
+    "appId": "com.bruntapps.quickwarc",
+    "productName": "QuickWARC",
+    "icon": "assets",
+    "win": {
+      "icon": "assets/icon.ico"
+    }
+  }
+}

@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+    <head>
+        <title>QuickWARC</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            html{
+                background-color: #364e66;
+                color: #ffffff;
+                font-size: 0.0625em;
+                font-family: "Noto Sans", sans-serif;
+                font-optical-sizing: auto;
+                text-shadow: 0px 1px 10px rgba(0,0,0,1);
+            }
+            body{
+                text-align: center;
+                font-size: 16rem;
+                margin: 0;
+            }
+            .container{
+                max-width: 1280px;
+                margin: auto;
+            }
+            h1{
+                text-shadow:none;
+                margin: 0 0 20px 0;
+                padding: 20px;
+                font-weight: normal;
+                background: linear-gradient(90deg, rgba(54,78,102,1) 0%, rgba(84,118,152,1) 100%);
+            }
+            h2{
+                font-weight: 300;
+            }
+            footer{
+                padding: 20px;
+                background: linear-gradient(90deg, rgba(54,78,102,1) 0%, rgba(84,118,152,1) 100%);
+            }
+            .logo{
+                max-width: 40px;
+                width: 100%;
+                vertical-align: middle;
+                margin-right: 5px;
+                margin-top: -7px;
+            }
+            header{
+                display: grid;
+                grid-template-columns: 0.3fr 1fr;
+                background-color: rgba(255,255,255,0.1);
+                border-radius: 10px;
+                align-items: center;
+                justify-items: center;
+                font-size: 22rem;
+                p{
+                    padding: 20px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            main{
+                display: grid;
+                grid-template-columns: 1fr 0.5fr;
+                gap: 30px;
+                text-align: left;
+                padding: 30px;
+                line-height: 2em;
+                
+            }
+            .screenshots img{
+                width: 100%;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            }
+            .divider{
+                width: 80%;
+                margin: auto;
+                border-top: 1px solid #ffffff;
+                margin-top: 30px;
+                padding-bottom: 20px;
+            }
+            a{
+                color: #eeeeee;
+                font-weight: bold;
+            }
+            .thankyou{
+                background-color: rgba(255,255,255,0.1);
+                padding: 50px;
+                margin: 20px;
+                text-align: left;
+                border-radius: 10px;
+                line-height: 2em;
+                h2{
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+            .thankyou > div{
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 50px;
+            }
+            #spider{
+                float: right;
+                width: 150px;
+                margin-top: 20px;
+            }
+            .button{
+                display: inline-block;
+                background-color: #ffffff;
+                color: #000;
+                padding: 15px 20px;
+                margin: 0 5px;
+                text-decoration: none;
+                text-shadow: none;
+                border-radius: 3px;
+                box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+                font-weight: 300;
+                font-size: 18rem;
+                transition: all 0.2s ease;
+                margin-bottom: 20px;
+            }
+            .button:hover{
+                background-color: #eeeeee;
+            }
+            .button:active{
+                box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+            }
+            .button.primary{
+                background-color: rgba(84,118,152,1);
+                color: #fff;
+                font-weight: bold;
+            }
+            @media screen and (max-width: 750px) {
+                header {
+                    display:block;
+                }
+                .thankyou{
+                    text-align: center;
+                }
+                .thankyou > div{
+                    display:block;
+                }
+                main{
+                    display:block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1><img class="logo" src="assets/icon.png" alt="QuickWarc Icon" />QuickWARC</h1>
+        <div class="container">
+            <header>
+                <img src="assets/welcome.png" alt="bigfoot" />
+                <p>
+                    Preserve, manage, and view captured websites with QuickWARC, the open-source web archiving tool designed to be easy to use with a comprehensive list of features.<br>
+                    <br>
+                    <a href="" class="button">View on GitHub</a>  <a href="" class="button primary">Download Now</a>
+                </p>
+            </header>
+            <main>
+                <div>
+                    
+                    <h2>Features at a Glance</h2>
+                    <ul>
+                        <li><b>Open Source:</b> QuickWARC is an open-source project, allowing for community collaboration and improvement. Contribute or 
+                        customise the tool according to your needs.</li>
+                        <li><b>Configurable Crawling:</b> Configure your crawl with precision. Set parameters that work for your project’s needs.</li>
+                        <li><b>Importing Capabilities:</b> Bring in WARC files from other sources and use QuickWARC as a central hub for viewing and managing web 
+                            archives.</li>
+                        <li><b>Export and Share:</b> Create collections and export WARC files for easy sharing and long-term storage.</li>
+                    </ul>
+                    <div class="divider"></div>
+                    <h2>Effortless Web Archiving</h2>
+                    <p>
+                        QuickWARC simplifies the creation and management of WARC files. With a user-friendly interface and powerful features, you can 
+                        effortlessly capture web pages as they are today, for the researchers of tomorrow.
+                    </p>
+                    <div class="divider"></div>
+                    <img src="assets/spider.png" id="spider" alt="Spider" />
+                    <h2>Auto Magic Spider</h2>
+                    <p>
+                        Set the Auto Magic Spider loose on the web, and it will automatically archive pages for you. Customise your crawl with 
+                        options for site depth, auto-scrolling, and exclusion lists.
+                    </p>
+                    <div class="divider"></div>
+                    <h2>Import and View WARC Files</h2>
+                    <p>
+                        As well as creating WARC files, you can also import existing archives for viewing. This makes QuickWARC an 
+                        ideal platform for reviewing archived content, ensuring that your digital collections are always accessible.
+                    </p>
+
+                </div>
+                <div class="screenshots">
+                    <h2>Screenshots</h2>
+                    <div>
+                        <a href="assets/shot1.png" target="_blank"><img src="assets/shot1.png" alt="Screenshot 1"></a>
+                        <a href="assets/shot2.png" target="_blank"><img src="assets/shot2.png" alt="Screenshot 2"></a>
+                        <a href="assets/shot3.png" target="_blank"><img src="assets/shot3.png" alt="Screenshot 3"></a>
+                        <a href="assets/shot4.png" target="_blank"><img src="assets/shot4.png" alt="Screenshot 4"></a>
+                    </div>
+                </div>
+            </main>
+        
+        </div>
+        <footer>
+            <p><a href="mailto:quickwarc@paulbrunt.co.uk">Contact</a> | <a href="">Github</a></p>
+            <p>Except where otherwise noted, content on this 
+                site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons 
+                    Attribution 4.0 International license</a>.</p>
+        </footer>
+    </body>
+</html>
